@@ -1,0 +1,135 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/* ----- Reset & base ----- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  color: #0f172a;           /* slate-900 */
+  background: #f8fafc;      /* slate-50 */
+  line-height: 1.5;
+}
+
+/* ----- Container ----- */
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* ----- Headings ----- */
+h1 {
+  margin: 0 0 12px;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+p.lead {
+  margin: 0 0 16px;
+  color: #334155;           /* slate-700 */
+}
+
+/* ----- Card ----- */
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0; /* slate-200 */
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  padding: 16px;
+}
+
+/* ----- Form ----- */
+form {
+  display: flex;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+input[type="text"],
+input[type="number"] {
+  flex: 1 1;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1; /* slate-300 */
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+input:focus {
+  border-color: #6366f1; /* indigo-500 */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* ----- Buttons ----- */
+button {
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #4f46e5;   /* indigo-600 */
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s, transform 0.02s;
+}
+button:hover { filter: brightness(1.05); }
+button:active { transform: translateY(1px); }
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ----- Feedback texts ----- */
+.text-error   { color: #b91c1c; } /* red-700 */
+.text-muted   { color: #64748b; } /* slate-500 */
+.text-success { color: #16a34a; } /* green-600 */
+
+/* ----- Task list ----- */
+ul.tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 8px;
+  gap: 8px;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #e2e8f0; /* slate-200 */
+  border-radius: 12px;
+}
+.task-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4f46e5; /* indigo-600 */
+}
+.task-title {
+  flex: 1 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.task-title.done { text-decoration: line-through; color: #94a3b8; } /* slate-400 */
+.task-delete {
+  border-color: #e11d48;   /* rose-600 */
+  background: #e11d48;
+}
+.task-delete:hover { filter: brightness(1.06); }
+
+/* ----- Empty / loading states ----- */
+.state {
+  padding: 16px;
+  border: 1px dashed #cbd5e1;  /* slate-300 */
+  border-radius: 12px;
+  color: #475569;              /* slate-600 */
+  background: #f1f5f9;         /* slate-100 */
+}
+
